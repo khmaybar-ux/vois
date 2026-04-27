@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Meals</title>
+<link rel="stylesheet" href="Style.css">
+</head>
+<body>
+<header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="AboutUs.html">About Us</a></li>
+            <li><a href="Meals.html">Meals</a></li>
+        </ul>
+    </nav>
+</header>
+<main>
+<h2>Meals Menu</h2>
+<table>
+    <tr>
+        <th>إظهار التفاصيل</th>
+        <th>الرمز</th>
+        <th>الوجبة</th>
+        <th>السعر</th>
+        <th>اختيار</th>
+    </tr>
+    <tr>
+        <td><button onclick="toggleDetails(this)">تفاصيل</button></td>
+        <td>SF-001</td>
+        <td>وجبة سمك مشوي</td>
+        <td>110000</td>
+        <td><input type="checkbox" value="110000" class="meal"></td>
+    </tr>
+    <tr class="details" style="display:none;">
+        <td colspan="2">
+            <img src="fish.webp" alt="go">
+        </td>
+        <td colspan="3"class="td">
+            <b>المطبخ:</b> البحر المتوسط<br>
+            <b>تصنيف الطعام:</b> ماكولات بحرية<br>
+            <b>مكونات:</b> سمك فاروط (او اي نوع تفضله) وشرائح ليمون ,ثم ثوم مفروم,بقدونس ,وزيت زيتون <br>
+            <b>صلصة:</b> صلصة الترتار (ماينويز ,ومخلل مفروم ,شبت,زعصير ليمون) او صلصة الزيت والليمون التقليدية
+        </td>
+    </tr>
+    <tr>
+        <td><button onclick="toggleDetails(this)">تفاصيل</button></td>
+        <td>SF-002</td>
+        <td>وجبة دجاج</td>
+        <td>90000</td>
+        <td><input type="checkbox" value="90000" class="meal"></td>
+    </tr>
+    <tr class="details" style="display:none;">
+        <td colspan="2" >
+            <img src="chicken.webp" alt="go">
+        </td>
+        <td colspan="3"class="td">
+            <b>المطبخ:</b> طبق عالمي يعد بمختلف المطابخ<br>
+            <b>تصنيف الطعام:</b> طبف رئيسي/برونين<br>
+            <b>مكونات:</b> دجاجة,كاملة,أعشاب(اكليك الجبل,زعتر) <br>
+            <b>صلصة:</b> المرق المحضر من عصارة الدجاج والدقيق او الصلصة الثومية الشهيرة في المطبخ العربي
+        </td>
+    </tr>
+    <tr>
+        <td><button onclick="toggleDetails(this)">تفاصيل</button></td>
+        <td>SF-003</td>
+        <td>مشويات مشكلة</td>
+        <td>150000</td>
+        <td><input type="checkbox" value="110000" class="meal"></td>
+    </tr>
+    <tr class="details" style="display:none;">
+        
+        <td colspan="2">
+            <img src="Mix.webp" alt="go">
+        </td>
+        <td colspan="3" class="td">
+            <b>المطبخ:</b> الشرقي والتركي<br>
+            <b>تصنيف الطعام:</b> مشويات ,طبق شعبي فاخر<br>
+            <b>مكونات:</b> لحم ضان (للكباب) ,قطع صدور دجاج,قطع لحم ,التتبيلة (بصل,بهارات مشكلة ,خل,وزبادي دجاج)<br>
+            <b>صلصة:</b> سلطة الطحينية (طحينية ,ليمون,خل,كمون)
+        </td>
+    </tr>
+    <tr>
+        <td><button onclick="toggleDetails(this)">تفاصيل</button></td>
+        <td>SF-004</td>
+        <td>صيادية السمك</td>
+        <td>100000</td>
+        <td><input type="checkbox" value="110000" class="meal"></td>
+    </tr>
+    <tr class="details" style="display:none;">
+        <td colspan="2">
+            <img src="fish2.webp" alt="go">
+        </td>
+        <td colspan="3" class="td">
+            <b>المطبخ:</b> الشامي / اللبناني<br>
+            <b>تصنيف الطعام:</b> طبف ارز وماكولات البحرية<br>
+            <b>مكونات:</b> ارز بسمتي او مصري ,سمك (هامور او كنعاد ) ,بصل بكميات كبيرة ,بهارات صيادية (كمون ,كزبرة ,قرفة ,بهار حلو) ,صنوبر ولوز محمص<br>
+            <b>صلصة:</b> صلصة طرطور (طحينية ,عصير ليمون ,ثوم وماء لتخفيف القوام) ,"مرق صيادية البني المكثف"
+        </td>
+    </tr>
+    <tr>
+        <td><button onclick="toggleDetails(this)">تفاصيل</button></td>
+        <td>SF-005</td>
+        <td>باستا بولونيز</td>
+        <td>200000</td>
+        <td><input type="checkbox" value="110000" class="meal"></td>
+    </tr>
+    <tr class="details" style="display:none;text-align: right;">
+        
+        <td colspan="2">
+            <img src="pasta.webp" alt="go">
+        </td>
+        <td colspan="3" class="td">
+            <b>المطبخ:</b> إطالي<br>
+            <b>تصنيف الطعام:</b> طبق الرئيسي <br>
+            <b>مكونات:</b> معكرونه ,لحم مفروم ناعم,جزر ومرفس وبصل (مقطع صغير جدا) ,وجبن بارميزان للوجه<br>
+            <b>صلصة:</b> صلصة البولوميز,تتكون من طماطم مقشرة ومعجون طماطم ,وتطبخ مع الخضار واللحم وزيت الزيتون
+        </td>
+    </tr>
+</table>
+<br>
+<button id="checkoutBtn" onclick="checkout()">متابعة</button>
+<div id="overlay"></div>
+<div id="formBox">
+<h3>نموذج الطلب</h3>
+<input type="text" id="name" placeholder="الاسم الكامل">
+<br><br>
+<input type="text" id="national" placeholder="الرقم الوطني">
+<br><br>
+<input type="text" id="birth" placeholder="dd-mm-yyyy">
+<br><br>
+<input type="text" id="phone" placeholder="رقم الموبايل">
+<br><br>
+<input type="email" id="email" placeholder="Email">
+<br><br>
+<button onclick="submitOrder()">إرسال</button>
+<button onclick="closeForm()" id="cancelBtn">إلغاء</button>
+</div>
+</main>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="myFunctions.js"></script>
+</body>
+</html>
